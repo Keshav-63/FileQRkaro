@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/upload",
+        "https://fileqrkaro.onrender.com/upload",
         {
           method: "POST",
           body: formData,
