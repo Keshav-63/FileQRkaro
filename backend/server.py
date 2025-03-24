@@ -115,7 +115,7 @@ def upload_file():
         return jsonify({"error": "Cloudinary upload failed"}), 500
 
 
-    qr_link = f"http://localhost:5000/download/{final_filename}"
+    qr_link = f"https://fileqrkaro.onrender.com/download/{final_filename}"
     qr = qrcode.make(qr_link)
     qr_path = os.path.join(app.config["UPLOAD_FOLDER"], f"{final_filename}_qr.png")
     qr.save(qr_path)
