@@ -1,0 +1,324 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 0.8s ease;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+/* File Upload Section */
+.file-upload-section {
+  margin-bottom: 4rem;
+  animation: slideUp 0.8s ease;
+}
+
+.file-upload-container {
+  max-width: 36rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.dropzone {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  text-align: center;
+  transition: border-color var(--transition), background-color var(--transition);
+  cursor: pointer;
+}
+
+.dropzone:hover,
+.dropzone.dragover {
+  border-color: var(--color-primary);
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.dark .dropzone:hover,
+.dark .dropzone.dragover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+.dark .upload-icon {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.dropzone-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.dropzone-text-small {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  display: none;
+}
+
+/* Upload Progress */
+.upload-progress-container {
+  display: none;
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  animation: fadeIn 0.5s ease;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.file-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: var(--border-radius);
+  margin-right: 1rem;
+  color: var(--color-primary);
+}
+
+.dark .file-icon {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.file-details {
+  flex: 1;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.file-size {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.close-btn:hover {
+  background-color: var(--color-background-alt);
+  color: var(--color-danger);
+}
+
+.progress-bar-container {
+  height: 0.5rem;
+  background-color: var(--color-border-light);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* QR Code Container */
+.qr-code-container {
+  display: none;
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code {
+  background-color: var(--color-background-card);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px var(--color-shadow);
+  width: 100%;
+
+}
+
+.qr-code-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.qr-code-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+.qr-img {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: none;
+}
+
+/* Upload Restrictions */
+.upload-restrictions {
+  background-color: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.dark .upload-restrictions {
+  background-color: rgba(245, 158, 11, 0.05);
+  border-color: rgba(245, 158, 11, 0.1);
+}
+
+.restrictions-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-warning);
+}
+
+.restrictions-list {
+  list-style-type: none;
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+}
+
+.restrictions-list li {
+  margin-bottom: 0.25rem;
+}
+
+/* Features Section */
+.features-section {
+  animation: slideUp 1s ease;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--color-shadow);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--color-shadow);
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  color: var(--color-primary);
+}
+
+.dark .feature-icon {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.feature-description {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
