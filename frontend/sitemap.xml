@@ -7,7 +7,7 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://fileqrkaro.onrender.com/assets/og-image.jpg</image:loc>
+            <image:loc>https://fileqrkaro.onrender.com/index.html</image:loc>
             <image:title>FileQRkaro - QR Code File Sharing</image:title>
             <image:caption>Instant file sharing with QR codes</image:caption>
         </image:image>
