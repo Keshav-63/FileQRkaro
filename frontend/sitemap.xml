@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://fileqrkaro.onrender.com/</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://fileqrkaro.onrender.com/assets/og-image.jpg</image:loc>
+            <image:title>FileQRkaro - QR Code File Sharing</image:title>
+            <image:caption>Instant file sharing with QR codes</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.onrender.com/about.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://fileqrkaro.onrender.com/contact.html</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>

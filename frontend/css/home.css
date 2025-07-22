@@ -10,13 +10,53 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--color-text);
+  line-height: 1.2;
 }
 
 .hero-subtitle {
   font-size: 1.1rem;
   color: var(--color-text-light);
-  max-width: 36rem;
-  margin: 0 auto;
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-top: 1rem;
+}
+
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: " / ";
+  margin: 0 0.5rem;
+  color: var(--color-text-light);
+}
+
+.breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-text);
 }
 
 /* File Upload Section */
@@ -203,7 +243,6 @@
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 4px var(--color-shadow);
   width: 100%;
-
 }
 
 .qr-code-title {
@@ -214,16 +253,17 @@
 }
 
 .qr-code-subtitle {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--color-text-light);
   margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 .qr-img {
-    width: 250px;
-    border: 1px solid #ddd;
-    padding: 5px;
-    display: none;
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: none;
 }
 
 /* Upload Restrictions */
@@ -242,7 +282,7 @@
 }
 
 .restrictions-title {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-warning);
@@ -250,17 +290,28 @@
 
 .restrictions-list {
   list-style-type: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--color-text-light);
 }
 
 .restrictions-list li {
   margin-bottom: 0.25rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.restrictions-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-success);
+  font-weight: bold;
 }
 
 /* Features Section */
 .features-section {
   animation: slideUp 1s ease;
+  margin-bottom: 4rem;
 }
 
 .features-grid {
@@ -307,18 +358,127 @@
 }
 
 .feature-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-bottom: 4rem;
+  animation: slideUp 1.2s ease;
+}
+
+.faq-container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.faq-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Use Cases Section */
+.use-cases-section {
+  margin-bottom: 4rem;
+  animation: slideUp 1.4s ease;
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.use-case-card {
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--color-shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.use-case-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--color-shadow);
+}
+
+.use-case-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.use-case-card p {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Responsive Styles */
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
   }
 
   .features-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .use-cases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
 }
 
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
