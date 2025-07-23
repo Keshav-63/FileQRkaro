@@ -6,7 +6,7 @@
 }
 
 .hero-title {
-  font-size: 2.25rem;
+  font-size: 1.8rem; /* Reduced from 2.25rem */
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--color-text);
@@ -14,7 +14,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 0.95rem; /* Reduced from 1.1rem */
   color: var(--color-text-light);
   max-width: 42rem;
   margin: 0 auto 2rem;
@@ -32,7 +32,7 @@
   padding: 0;
   margin: 0;
   justify-content: center;
-  font-size: 0.875rem;
+  font-size: 0.8rem; /* Reduced from 0.875rem */
 }
 
 .breadcrumb li:not(:last-child)::after {
@@ -52,7 +52,7 @@
 
 /* Section Titles */
 .section-title {
-  font-size: 2rem;
+  font-size: 1.7rem; /* Reduced from 2rem */
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
@@ -114,14 +114,14 @@
 }
 
 .dropzone-text {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced from 1rem */
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
 .dropzone-text-small {
-  font-size: 0.8rem;
+  font-size: 0.75rem; /* Reduced from 0.8rem */
   color: var(--color-text-light);
   margin-bottom: 1rem;
 }
@@ -167,14 +167,14 @@
 }
 
 .file-name {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Reduced from 0.9rem */
   font-weight: 500;
   margin-bottom: 0.25rem;
   color: var(--color-text);
 }
 
 .file-size {
-  font-size: 0.8rem;
+  font-size: 0.75rem; /* Reduced from 0.8rem */
   color: var(--color-text-light);
 }
 
@@ -216,7 +216,7 @@
 .progress-text {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.75rem; /* Reduced from 0.8rem */
   color: var(--color-text-light);
 }
 
@@ -246,14 +246,14 @@
 }
 
 .qr-code-title {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Reduced from 1.1rem */
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
 .qr-code-subtitle {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Reduced from 0.9rem */
   color: var(--color-text-light);
   margin-bottom: 1.5rem;
   line-height: 1.5;
@@ -282,7 +282,7 @@
 }
 
 .restrictions-title {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Reduced from 0.9rem */
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-warning);
@@ -290,7 +290,7 @@
 
 .restrictions-list {
   list-style-type: none;
-  font-size: 0.8rem;
+  font-size: 0.75rem; /* Reduced from 0.8rem */
   color: var(--color-text-light);
 }
 
@@ -351,14 +351,14 @@
 }
 
 .feature-title {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Reduced from 1.1rem */
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
 .feature-description {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Reduced from 0.9rem */
   color: var(--color-text-light);
   line-height: 1.5;
 }
@@ -383,14 +383,14 @@
 }
 
 .faq-item h3 {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Reduced from 1.1rem */
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
 .faq-item p {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Reduced from 0.9rem */
   color: var(--color-text-light);
   line-height: 1.6;
   margin-bottom: 0;
@@ -424,17 +424,122 @@
 }
 
 .use-case-card h3 {
-  font-size: 1rem;
+  font-size: 0.95rem; /* Reduced from 1rem */
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
 .use-case-card p {
-  font-size: 0.85rem;
+  font-size: 0.8rem; /* Reduced from 0.85rem */
   color: var(--color-text-light);
   line-height: 1.5;
   margin-bottom: 0;
+}
+
+/* Keywords Section */
+.keywords-section {
+  margin-bottom: 4rem;
+  animation: slideUp 1.6s ease;
+}
+
+.keywords-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.keyword-category {
+  margin-bottom: 2rem;
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.keyword-category-title {
+  font-size: 1rem; /* Reduced from 1.1rem */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--color-background-alt);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-size: 0.8rem; /* Reduced from 0.85rem */
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-border);
+}
+
+.keyword-tag:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.dark .keyword-tag {
+  background-color: var(--color-background-alt);
+  border-color: var(--color-border);
+}
+
+/* Trending Section */
+.trending-section {
+  margin-bottom: 4rem;
+  animation: slideUp 1.8s ease;
+}
+
+.trending-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.trending-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.trending-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem; /* Reduced from 0.9rem */
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.trending-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.dark .trending-link {
+  background-color: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.3);
 }
 
 /* Screen Reader Only */
@@ -453,11 +558,11 @@
 /* Responsive Styles */
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 2.75rem;
+    font-size: 2.2rem; /* Reduced from 2.75rem */
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.05rem; /* Reduced from 1.2rem */
   }
 
   .features-grid {
@@ -469,16 +574,16 @@
   }
 
   .section-title {
-    font-size: 2.25rem;
+    font-size: 1.9rem; /* Reduced from 2.25rem */
   }
 }
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reduced from 3rem */
   }
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2.1rem; /* Reduced from 2.5rem */
   }
 }
