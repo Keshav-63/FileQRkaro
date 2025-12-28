@@ -19,6 +19,10 @@ load_dotenv()
 app = Flask(__name__, static_folder="../frontend", static_url_path="/")
 CORS(app)
 
+@app.route("/health")
+def health():
+    return jsonify(status="ok"), 200
+
 
 client = pymongo.MongoClient(os.getenv("MONGO_URI"))
 db = client["fileqrkaro"]
@@ -208,4 +212,6 @@ def cleanup_expired_files():
 threading.Thread(target=cleanup_expired_files, daemon=True).start()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port)
+
