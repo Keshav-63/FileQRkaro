@@ -208,6 +208,8 @@ def cleanup_expired_files():
 threading.Thread(target=cleanup_expired_files, daemon=True).start()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
+
 
 
