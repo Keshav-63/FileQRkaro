@@ -16,6 +16,10 @@ import time
 
 load_dotenv()
 
+# Get base URL from environment variable (required for correct QR code links)
+# Set this to your deployment URL (e.g., https://your-username-fileqrkaro.hf.space)
+BASE_URL = os.getenv("BASE_URL", "http://localhost:10000")
+
 app = Flask(__name__, static_folder="../frontend", static_url_path="/")
 CORS(app)
 
@@ -115,7 +119,7 @@ def upload_file():
         return jsonify({"error": "Cloudinary upload failed"}), 500
 
 
-    qr_link = f"https://fileqrkaro.onrender.com/download/{final_filename}"
+    qr_link = f"{BASE_URL}/download/{final_filename}"
     qr = qrcode.make(qr_link)
     qr_path = os.path.join(app.config["UPLOAD_FOLDER"], f"{final_filename}_qr.png")
     qr.save(qr_path)
