@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://fileqrkaro.onrender.com/sitemap.xml
+Sitemap: https://keshavsuthar-dev.hf.space/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

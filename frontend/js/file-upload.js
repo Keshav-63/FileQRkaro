@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://fileqrkaro.onrender.com/upload",
+        "https://keshavsuthar-dev.hf.space/upload",
         {
           method: "POST",
           body: formData,

@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           
-          const response = await fetch("https://fileqrkaro.onrender.com/submit-contact", {
+          const response = await fetch("https://keshavsuthar-dev.hf.space/submit-contact", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
