@@ -74,11 +74,4 @@ Before deploying, you need to set up:
    ```
 5. Open http://localhost:10000 in your browser
 
-## Tech Stack
-
-- **Backend:** Python, Flask
-- **Database:** MongoDB
-- **File Storage:** Cloudinary
-- **QR Generation:** qrcode library
-- **Frontend:** HTML, CSS, JavaScript
 
