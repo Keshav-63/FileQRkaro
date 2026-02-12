@@ -82,6 +82,3 @@ Before deploying, you need to set up:
 - **QR Generation:** qrcode library
 - **Frontend:** HTML, CSS, JavaScript
 
-## License
-
-This project is open source.
