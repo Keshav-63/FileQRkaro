@@ -72,6 +72,6 @@ Before deploying, you need to set up:
    cd backend
    python server.py
    ```
-5. Open http://localhost:10000 in your browser
+5. Open http://localhost:10000 in your browser.
 
 
