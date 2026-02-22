@@ -24,7 +24,6 @@ BASE_URL = os.getenv("BASE_URL", "http://localhost:10000")
 app = Flask(__name__, static_folder="../frontend", static_url_path="/")
 CORS(app)
 
-
 client = pymongo.MongoClient(os.getenv("MONGO_URI"))
 db = client["fileqrkaro"]
 files_collection = db["files"]
