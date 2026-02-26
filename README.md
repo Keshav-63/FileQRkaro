@@ -75,5 +75,5 @@ Before deploying, you need to set up:
 5. Open http://localhost:10000 in your browser.
 
 
-https://fileqrkaro.keshavstack.tech
+https://fileqrkaro.keshavstack.tech :)
 
