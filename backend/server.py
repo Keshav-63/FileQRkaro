@@ -37,6 +37,7 @@ cloudinary.config(
 )
 
 UPLOAD_FOLDER = "uploads"
+UPLOAD_FOLDER_1 = "uploads_1"
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
