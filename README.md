@@ -2,7 +2,6 @@
 
 A web application that allows users to upload files and folders, then generates QR codes for easy downloading.
 
-
 ## Features
 
 
