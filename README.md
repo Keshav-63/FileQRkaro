@@ -4,7 +4,6 @@ A web application that allows users to upload files and folders, then generates 
 
 ## Features
 
-
 - Upload single files or entire folders
 - Automatic QR code generation for downloads
 - Files stored securely on Cloudinary
