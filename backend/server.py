@@ -18,7 +18,6 @@ load_dotenv()
 
 
 # Get base URL from environment variable (required for correct QR code links)
-
 # Set this to your deployment URL (e.g., https://your-username-fileqrkaro.hf.space)
 BASE_URL = os.getenv("BASE_URL", "http://localhost:10000")
 
