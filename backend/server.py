@@ -13,12 +13,8 @@ import datetime
 import threading
 import time
 
-
 load_dotenv()
 
-
-# Get base URL from environment variable (required for correct QR code links)
-# Set this to your deployment URL (e.g., https://your-username-fileqrkaro.hf.space)
 BASE_URL = os.getenv("BASE_URL", "http://localhost:10000")
 
 app = Flask(__name__, static_folder="../frontend", static_url_path="/")
@@ -43,7 +39,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
-EXPIRATION_TIME = 86400  # 24 hours in seconds
+EXPIRATION_TIME = 86400  
 
 
 def zip_folder(folder_path, output_filename):
@@ -62,7 +58,7 @@ def zip_folder(folder_path, output_filename):
 @app.route("/upload", methods=["POST"])
 def upload_file():
     """Upload a file/folder, store in Cloudinary, and generate a QR code."""
-    uploaded_files = request.files.getlist("files")  # Get multiple files
+    uploaded_files = request.files.getlist("files")  
     is_folder = request.form.get("is_folder") == "true"
 
     if not uploaded_files:
@@ -206,10 +202,9 @@ def cleanup_expired_files():
             except Exception as e:
                 print(f"Error deleting file {file_data['filename']}: {str(e)}")
 
-        time.sleep(3600)  # Run cleanup every hour
+        time.sleep(3600)  
 
 
-# Start the cleanup process in a separate thread
 threading.Thread(target=cleanup_expired_files, daemon=True).start()
 
 if __name__ == "__main__":
