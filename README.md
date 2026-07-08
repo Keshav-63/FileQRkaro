@@ -1,7 +1,8 @@
 # FileQRkaro
 A web application that allows users to upload files and folders, then generates QR codes for easy downloading.
 
-## Features
+
+## Feature
 
 - Upload single files or entire folders
 - Automatic QR code generation for downloads
