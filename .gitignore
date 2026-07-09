@@ -33,6 +33,7 @@ env/
 # Uploads folder
 backend/uploads/
 uploads/
+.claude/
 
 # IDE
 .idea/
