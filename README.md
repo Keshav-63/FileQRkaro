@@ -12,7 +12,7 @@ A web application that allows users to upload files and folders, then generates 
 
 ## Hugging Face Spaces Deployment
 
-This application can be deployed on Hugging Face Spaces using Docker.
+This application can be deployed on Hugging Face Spaces using Docker
 
 ### Steps to Deploy on Hugging Face Spaces
 
